@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cRudelDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="pix-uV-M3s">
+                                <rect key="frame" x="0.0" y="0.0" width="444" height="945"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="cuD-1D-UTR">
+                                <rect key="frame" x="59" y="385" width="112" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="oPA-5K-1oo">
+                                <rect key="frame" x="246" y="385" width="112" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dlogo" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-Ii-Ydf">
+                                <rect key="frame" x="122" y="80" width="170" height="225"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfq-7B-xML">
+                                <rect key="frame" x="146" y="530" width="83" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Roll!">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40q-Bw-ZsC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cuD-1D-UTR" firstAttribute="top" secondItem="VLD-Ii-Ydf" secondAttribute="bottom" constant="55" id="3cQ-lk-N3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oPA-5K-1oo" secondAttribute="trailing" constant="40" id="3vI-Du-cR4"/>
+                            <constraint firstItem="oPA-5K-1oo" firstAttribute="leading" secondItem="cuD-1D-UTR" secondAttribute="trailing" constant="55" id="6dF-PO-7fg"/>
+                            <constraint firstItem="tfq-7B-xML" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="8Mb-QU-6Ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tfq-7B-xML" secondAttribute="trailing" constant="146" id="9D6-3N-tQn"/>
+                            <constraint firstItem="oPA-5K-1oo" firstAttribute="leading" secondItem="cuD-1D-UTR" secondAttribute="trailing" constant="55" id="FAi-SD-MFl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tfq-7B-xML" secondAttribute="bottom" constant="135" id="V5k-ca-a2P"/>
+                            <constraint firstItem="tfq-7B-xML" firstAttribute="top" secondItem="cuD-1D-UTR" secondAttribute="bottom" constant="79" id="W3C-Se-kI5"/>
+                            <constraint firstItem="tfq-7B-xML" firstAttribute="top" secondItem="oPA-5K-1oo" secondAttribute="bottom" constant="79" id="h4h-kY-3R6"/>
+                            <constraint firstItem="cuD-1D-UTR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="hvI-dT-H4M"/>
+                            <constraint firstItem="tfq-7B-xML" firstAttribute="top" secondItem="cuD-1D-UTR" secondAttribute="bottom" constant="79" id="tvk-GR-xfC"/>
+                            <constraint firstItem="oPA-5K-1oo" firstAttribute="top" secondItem="VLD-Ii-Ydf" secondAttribute="bottom" constant="55" id="ycL-4l-ype"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="diceImage1" destination="cuD-1D-UTR" id="r2k-9a-DnH"/>
+                        <outlet property="diceImage2" destination="oPA-5K-1oo" id="YWO-D0-bMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="d1" width="112" height="112"/>
+        <image name="dlogo" width="225" height="225"/>
+        <image name="green" width="198.47999572753906" height="115.19999694824219"/>
+    </resources>
+</document>
